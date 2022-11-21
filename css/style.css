@@ -5,9 +5,18 @@
     box-sizing: border-box;
 }
 
+/* GENERAL */
+.debug .container{
+    margin: 0 auto;
+    width: 80vw;
+}
+button:hover{
+    cursor: pointer;
+}
+
 /* NAVIGATION */
 nav{
-    height: 50px;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,18 +27,45 @@ nav::before{
     display: table;
     clear: both;
 }
-nav > div{
-    height: 50px; 
-    width: 400px;
+nav div > div{
+    padding: 15px 0;
+}
+nav div > button{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-style: none;
+    background-color: white;
+}
+.navigation-left{
     float: left;
+    padding-left: 10px;
+}
+.navigation-left img{
+    width: 100px;
+    vertical-align: middle;
+}
+.navigation-left > div, .navigation-right > div{
+    display: inline-block; 
 }
 .navigation-right{
     float: right;
+    text-align: end;
+    padding-right: 10px;
+}
+.navigation-left > div:hover,
+.navigation-right > div:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.button-blue{
+    background-color: blue;
+    color: white;
 }
 
 /* MAIN */
-main{
-    /* height: 100vh; */
+.container-main{
+    width: 70vw;
+    margin: auto;
 }
 
 
@@ -55,42 +91,12 @@ main{
 
 /* DEBUG */
 *{
-    border: 1px solid black;
-}
-.debug nav{
-    height: 50px;
-    background-color: yellow;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-}
-.debug nav::before{
-    content: '';
-    display: table;
-    clear: both;
-}
-.debug nav >div{
-    background-color: red;
-    height: 50px; 
-    width: 400px;
-    float: left;
-}
-.debug nav > div:last-child{
-    float: right;
+    /* border: 1px solid black; */
 }
 .debug header{
     padding-top: 100px;
     height: 600px;
     background-color: blue;
-}
-.debug .container-main{
-    width: 70vw;
-    margin: auto;
-}
-.debug .container{
-    margin: 0 auto;
-    width: 80vw;
 }
 .header-title div{
     height: 150px;
