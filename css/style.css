@@ -6,12 +6,22 @@
 }
 
 /* GENERAL */
-.debug .container{
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
     margin: 0 auto;
     width: 80vw;
 }
 button:hover{
     cursor: pointer;
+}
+.button-blue{
+    background-color: blue;
+    color: white;
+}
+h1{
+    font-size: 4em;
 }
 
 /* NAVIGATION */
@@ -44,7 +54,8 @@ nav div > button{
     width: 100px;
     vertical-align: middle;
 }
-.navigation-left > div, .navigation-right > div{
+.navigation-left > div, 
+.navigation-right > div{
     display: inline-block; 
 }
 .navigation-right{
@@ -52,14 +63,44 @@ nav div > button{
     text-align: end;
     padding-right: 10px;
 }
-.navigation-left > div:hover,
+.navigation-left > div:not(.logo):hover,
 .navigation-right > div:hover{
     border-bottom: 2px solid black;
     cursor: pointer;
 }
-.button-blue{
-    background-color: blue;
-    color: white;
+
+/* HEADER */
+header{
+    padding-top: 100px;
+    background-color: cornflowerblue
+}
+.header-bottom{
+    display: flex;
+}
+.header-title > h1{
+    padding-bottom: 30px;
+}
+.header-paragraph{
+    width: 30vw;
+    font-size: 1em;
+}
+.header-paragraph > button{
+    margin: 30px 0;
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+.header-paragraph i {
+   font-size: 3em;
+   margin-top: 80px;
+   color: black;
+}
+.header-img{
+    width: 70vw;
+    height: 400px;
+}
+.header-img > img{
+    width: 100%;
 }
 
 /* MAIN */
@@ -93,36 +134,10 @@ nav div > button{
 *{
     /* border: 1px solid black; */
 }
-.debug header{
-    padding-top: 100px;
-    height: 600px;
-    background-color: blue;
-}
-.header-title div{
-    height: 150px;
-    background-color: white;
-
-}
-.header-paragraph{
-    height: 350px;
-    width: 30vw;
-    background-color: red;
-    display: inline-block;
-}
-.header-img{
-    background-color: aquamarine;
-    width: 70vw;
-    height: 400px;
-}
-.header-bottom{
-    display: flex;
-    justify-content: center;
-}
 main{
-    padding-top: 80px;
+    padding-top: 150px;
 }
 main .container > section{
-    /* height: 700px; */
     background-color: cornflowerblue;
     margin: 30px 0;
 }
