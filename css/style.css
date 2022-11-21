@@ -29,7 +29,7 @@ nav > div{
 
 /* MAIN */
 main{
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
@@ -84,9 +84,13 @@ main{
     height: 600px;
     background-color: blue;
 }
-.debug .container{
-    width: 70%;
+.debug .container-main{
+    width: 70vw;
     margin: auto;
+}
+.debug .container{
+    margin: 0 auto;
+    width: 80vw;
 }
 .header-title div{
     height: 150px;
@@ -155,4 +159,50 @@ main .container > section{
     width: calc(100% / 3);
     height: 400px;
     background-color: chocolate;
+}
+.designit{
+    background-color: cadetblue;
+    height: 500px;
+    display: flex;
+}
+.designit div{
+    background-color: blanchedalmond;
+    width: calc(100% / 3);
+}
+.designit-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.designit-img div{
+    width: 50%;
+    height: 50%;
+}
+.free-dropbox{
+    height: 300px;
+    background-color: blue;
+}
+footer{
+    background-color: black;
+    height: 500px;
+}
+.questions{
+    height: 400px;
+    background-color: green;
+}
+.questions div{
+    height: 50px;
+    background-color: red
+}
+footer .info{
+    display: flex;
+    background-color: yellow;
+    height: 300px;
+    margin-top: 30px;
+}
+.info div{
+    width: calc(100% / 5);
+}
+.container .italy{
+    height: 20px;
+    background-color: white;
 }
