@@ -13,15 +13,15 @@ body{
     margin: 0 auto;
     width: 80vw;
 }
+button{
+    border-style: none;
+}
 button:hover{
     cursor: pointer;
 }
 .button-blue{
-    background-color: blue;
+    background-color: #0061ff;
     color: white;
-}
-h1{
-    font-size: 4em;
 }
 
 /* NAVIGATION */
@@ -32,7 +32,7 @@ nav{
     left: 0;
     width: 100vw;
 }
-nav::before{
+.clearfix::before{
     content: '';
     display: table;
     clear: both;
@@ -43,7 +43,6 @@ nav div > div{
 nav div > button{
     margin: 0 10px;
     padding: 5px 10px;
-    border-style: none;
     background-color: white;
 }
 .navigation-left{
@@ -72,17 +71,17 @@ nav div > button{
 /* HEADER */
 header{
     padding-top: 100px;
-    background-color: cornflowerblue
+    background-color: #b4d0e7
 }
 .header-bottom{
     display: flex;
 }
 .header-title > h1{
     padding-bottom: 30px;
+    font-size: 4em;
 }
 .header-paragraph{
     width: 30vw;
-    font-size: 1em;
 }
 .header-paragraph > button{
     margin: 30px 0;
@@ -104,10 +103,92 @@ header{
 }
 
 /* MAIN */
+main{
+    padding-top: 150px;
+}
 .container-main{
     width: 70vw;
     margin: auto;
 }
+.container-main > section{
+    margin: 30px 0;
+}
+.business-title > h2{
+    font-size: 2.5em;
+}
+.business-title div{
+    display: inline-block;
+    margin: 50px 50px 50px 0;
+}
+.circle{
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    height: 20px;
+    width: 20px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+.first-radiobox > span{
+    border: 4px solid blue;
+}
+.column-business > .column-top{
+    display: flex;
+    justify-content: space-between;
+}
+.column-top > div{
+    width: 300px;
+}
+.business-box{
+    border: 1px solid black;
+}
+.card{
+    padding: 30px;
+}
+.business-box > h3{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px 0;
+    font-size: 0.8em;
+}
+.card h4{
+    font-size: 1.2em;
+}
+.card h5{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card p{
+    margin: 20px 0;
+    font-size: 0.8em;
+}
+.card span{
+    font-size: 13px;
+}
+.card-center{
+    margin: 50px 0;
+}
+.card-button{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-button > button{
+    padding: 10px 30px;
+}
+hr{
+    margin: 40px 0;
+    width: 40px;
+}
+.column-bottom{
+    margin-top: 40px;
+}
+.card-bottom > h5{
+    margin-bottom: 30px;
+}
+.column-bottom p{
+    margin-top: 50px;
+}
+
 
 
 
@@ -134,32 +215,10 @@ header{
 *{
     /* border: 1px solid black; */
 }
-main{
-    padding-top: 150px;
-}
-main .container > section{
-    background-color: cornflowerblue;
-    margin: 30px 0;
-}
-.column-business > .business-one{
-    display: flex;
-    justify-content: space-between;
-}
 
-.business-one div{
-    background-color: blueviolet;
-    width: 300px;
-    height: 600px;
-}
-.business-two{
-    margin-top: 40px;
-    width: 100%;
-    background-color: mediumaquamarine;
-    height: 300px;
-}
+
 .partner-dropbox{
     display: flex;
-    /* margin-top: 50px; */
 }
 .partner-dropbox div:first-child{
     height: 400px;
