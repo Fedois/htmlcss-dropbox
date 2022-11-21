@@ -4,3 +4,155 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* NAVIGATION */
+nav{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+nav::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav > div{
+    height: 50px; 
+    width: 400px;
+    float: left;
+}
+.navigation-right{
+    float: right;
+}
+
+/* MAIN */
+main{
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+*{
+    border: 1px solid black;
+}
+.debug nav{
+    height: 50px;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+.debug nav::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.debug nav >div{
+    background-color: red;
+    height: 50px; 
+    width: 400px;
+    float: left;
+}
+.debug nav > div:last-child{
+    float: right;
+}
+.debug header{
+    padding-top: 100px;
+    height: 600px;
+    background-color: blue;
+}
+.debug .container{
+    width: 70%;
+    margin: auto;
+}
+.header-title div{
+    height: 150px;
+    background-color: white;
+
+}
+.header-paragraph{
+    height: 350px;
+    width: 30vw;
+    background-color: red;
+    display: inline-block;
+}
+.header-img{
+    background-color: aquamarine;
+    width: 70vw;
+    height: 400px;
+}
+.header-bottom{
+    display: flex;
+    justify-content: center;
+}
+main{
+    padding-top: 80px;
+}
+main .container > section{
+    /* height: 700px; */
+    background-color: cornflowerblue;
+    margin: 30px 0;
+}
+.column-business > .business-one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.business-one div{
+    background-color: blueviolet;
+    width: 300px;
+    height: 600px;
+}
+.business-two{
+    margin-top: 40px;
+    width: 100%;
+    background-color: mediumaquamarine;
+    height: 300px;
+}
+.partner-dropbox{
+    display: flex;
+    /* margin-top: 50px; */
+}
+.partner-dropbox div:first-child{
+    height: 400px;
+    width: 60%;
+    background-color: green;
+}
+.partner-dropbox div:last-child{
+    height: 400px;
+    width: 40%;
+    background-color: red;
+}
+.column-business-two{
+    /* margin-top: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-business-two div{
+    width: calc(100% / 3);
+    height: 400px;
+    background-color: chocolate;
+}
