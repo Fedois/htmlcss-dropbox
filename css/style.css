@@ -147,6 +147,10 @@ header{
     padding: 5px 0;
     font-size: 0.8em;
 }
+.box i{
+    margin-right: 5px;
+    font-size: 0.8em;
+}
 .container-small{
     padding: 30px;
 }
@@ -158,7 +162,6 @@ header{
     margin-bottom: 10px;
 }
 .container-small p{
-    margin: 20px 0;
     font-size: 0.8em;
 }
 .container-small span{
@@ -167,17 +170,25 @@ header{
 .part-center{
     margin: 50px 0;
 }
+.part-center > div,
+.part-bottom > div{
+    margin: 15px 0;
+}
 .part-button{
+    padding-bottom: 30px;
     text-align: center;
-    margin-bottom: 30px;
 }
 .part-button > button{
     padding: 10px 30px;
+    width: 100%;
 }
 hr{
     margin: 40px 0;
     width: 40px;
     background-color: lightgray;
+}
+.part-bottom div > i{
+    color: blue;
 }
 .column-bottom{
     margin-top: 40px;
@@ -233,13 +244,13 @@ hr{
     padding-bottom: 25px;
 }
 
-/* n. teams che utilizzano */
+/* n. teams usano dropbox */
 .people-use > h2{
     font-size: 1.9em;
     margin-bottom: 50px;
 }
 .people-use > span{
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 /* designit */
@@ -315,10 +326,12 @@ hr{
 }
 .question{
     padding: 25px 0;
-    border: solid black;
-    border-width: 1px 0;
+    border-top: 1px solid gray;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.container-main > .question:last-child{
+    border-bottom: 1px solid gray;
 }
 .question span{
     margin-right: 30px;
@@ -329,6 +342,15 @@ hr{
 }
 .question:hover p{
     display: block;
+}
+.arrow i:first-child{
+    display: none;
+}
+.question:hover .arrow i:first-child{
+    display: block;
+}
+.question:hover .arrow i:last-child{
+    display: none;
 }
 
 /* FOOTER */
