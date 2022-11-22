@@ -122,7 +122,7 @@ header{
 }
 .circle{
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid lightgray;
     background-color: white;
     height: 20px;
     width: 20px; 
@@ -139,11 +139,11 @@ header{
     max-width: 280px;
 }
 .box{
-    border: 1px solid gray;
+    border: 2px solid lightgray;
 }
 .box > h3{
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid lightgray;
     padding: 5px 0;
     font-size: 0.8em;
 }
@@ -154,6 +154,9 @@ header{
 .container-small{
     padding: 30px;
 }
+.container-small p{
+    font-size: 0.8em;
+}
 .container-small h4{
     font-size: 1.2em;
 }
@@ -161,11 +164,9 @@ header{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.container-small p{
-    font-size: 0.8em;
-}
-.container-small span{
+.part-top span{
     font-size: 13px;
+    color: gray;
 }
 .part-center{
     margin: 50px 0;
@@ -175,19 +176,22 @@ header{
     margin: 15px 0;
 }
 .part-button{
-    padding-bottom: 30px;
     text-align: center;
 }
 .part-button > button{
     padding: 10px 30px;
+    margin: 30px 0;
     width: 100%;
+}
+.part-center span{
+    font-size: 0.8em;
 }
 hr{
     margin: 40px 0;
     width: 40px;
     background-color: lightgray;
 }
-.part-bottom div > i{
+.part-bottom i{
     color: blue;
 }
 .column-bottom{
@@ -245,15 +249,21 @@ hr{
 }
 
 /* n. teams usano dropbox */
-.people-use > h2{
+.team-use > h2{
     font-size: 1.9em;
     margin-bottom: 50px;
 }
-.people-use > span{
-    font-size: 0.8em;
+.team-use > span{
+    font-size: 0.9em;
 }
 
 /* designit */
+.designit{
+    height: calc(100vw / 3);
+}
+.designit div{
+    width: calc(100vw / 3);
+}
 .designit-center{
     padding: 30px;
     overflow: auto;
@@ -269,9 +279,14 @@ hr{
 .designit-center > p{
     padding-bottom: 40px;
 }
+.designit-img{
+    flex-wrap: wrap;
+}
 .designit-img > div{
     justify-content: center;
     align-items: center;
+    width: 50%;
+    height: 50%;
 }
 .designit-img img{
     width: 50%;
@@ -308,7 +323,7 @@ hr{
     background-color: #b4d0e7;
 }
 .container-main{
-    padding: 80px 0;
+    padding: 100px 0;
     justify-content: space-between;
 }
 .free-dropbox h2{
@@ -389,42 +404,4 @@ footer hr{
 }
 .italy i{
     margin-right: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* DEBUG */
-footer *{
-    /* border: 1px solid white; */
-}
-.designit{
-    height: 500px;
-}
-.designit div{
-    width: calc(100% / 3);
-}
-.designit-img{
-    flex-wrap: wrap;
-}
-.designit-img div{
-    width: 50%;
-    height: 50%;
 }
