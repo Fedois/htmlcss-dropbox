@@ -11,7 +11,7 @@ body{
 }
 .container-big{
     margin: 0 auto;
-    width: 80vw;
+    width: 70vw;
 }
 .clearfix::before{
     content: '';
@@ -26,6 +26,7 @@ button{
 }
 button:hover{
     cursor: pointer;
+    opacity: 0.7;
 }
 .button-blue{
     background-color: #0061ff;
@@ -71,7 +72,8 @@ nav div > button{
     cursor: pointer;
 }
 
-/* HEADER */
+/* MAIN*/
+/* header */
 header{
     padding-top: 100px;
     background-color: #b4d0e7
@@ -91,25 +93,26 @@ header{
 }
 .header-paragraph i {
    font-size: 3em;
-   margin-top: 80px;
+   margin-top: 70px;
    color: black;
 }
 .header-img{
-    width: 70vw;
-    height: 400px;
+    width: 80vw;
+    height: 200px;
 }
 .header-img > img{
     width: 100%;
 }
-
-/* MAIN */
 .container-main{
-    width: 70vw;
+    width: 60vw;
     margin: auto;
 }
 .container-main > section{
-    margin: 180px 0;
+    margin-bottom: 140px;
+    margin-top: 50px;
 }
+
+/* piano business*/
 .business-title > h2{
     font-size: 2.5em;
 }
@@ -133,7 +136,7 @@ header{
     justify-content: space-between;
 }
 .column-top > div{
-    width: 300px;
+    max-width: 280px;
 }
 .box{
     border: 1px solid black;
@@ -187,6 +190,8 @@ hr{
 .column-bottom .container-small div > .part-button{
     float: right;
 }
+
+/* partner-dropbox */
 .partner-img{
     width: 60vw;
 }
@@ -206,6 +211,8 @@ hr{
     background-color: transparent;
     border: 1px solid black;
 }
+
+/* piano business 2 */
 .column-business-2 > h2{
     margin-bottom: 40px;
     font-size: 1.9em;
@@ -224,6 +231,8 @@ hr{
     padding-top: 15px;
     padding-bottom: 25px;
 }
+
+/* n. teams che utilizzano */
 .people-use > h2{
     font-size: 1.9em;
     margin-bottom: 50px;
@@ -231,6 +240,8 @@ hr{
 .people-use > span{
     font-size: 0.7em;
 }
+
+/* designit */
 .designit-center{
     padding: 30px;
     overflow: auto;
@@ -251,6 +262,7 @@ hr{
 }
 .designit-img img{
     width: 50%;
+    filter: invert(1);
 }
 .square-1{
     background-color: green;
@@ -263,6 +275,95 @@ hr{
 }
 .square-4{
     background-color: red;
+}
+.square-5{
+    background-color: red;
+}
+.square-6{
+    background-color: red;
+}
+.square-7{
+    background-color: red;
+}
+.square-8{
+    background-color: red;
+}
+
+/* prova gratuita*/
+.free-dropbox{
+    background-color: blue;
+}
+.container-main{
+    padding: 80px 0;
+    justify-content: space-between;
+}
+.free-dropbox h2{
+    font-size: 1.9em;
+}
+.free-dropbox button{
+    padding: 10px 40px;
+}
+
+/* domande frequenti*/
+.questions h2{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 1.9em;
+}
+.question{
+    padding: 25px 0;
+    border: solid black;
+    border-width: 1px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.question span{
+    margin-right: 30px;
+}
+.question p{
+    margin-top: 40px;
+    display: none;
+}
+.question:hover p{
+    display: block;
+}
+
+/* FOOTER */
+/* lista informazioni */
+footer{
+    background-color: black;
+}
+.info{
+    color: white;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+.info div{
+    width: calc(100% / 5);
+}
+.info h3{
+    margin-bottom: 30px;
+}
+.info-list li{
+    list-style: none;
+    margin: 10px 0;
+}
+.info-list li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+footer hr{
+    width: 100px;
+}
+/* cambia lingua */
+.italy{
+    color: white;
+    font-size: 0.7em;
+    padding-bottom: 40px;
+}
+.italy i{
+    margin-right: 5px;
 }
 
 
@@ -286,50 +387,19 @@ hr{
 
 
 /* DEBUG */
-*{
-    /* border: 1px solid black; */
+footer *{
+    /* border: 1px solid white; */
 }
 .designit{
     height: 500px;
 }
 .designit div{
-    /* background-color: blanchedalmond; */
     width: calc(100% / 3);
 }
 .designit-img{
-    display: flex;
     flex-wrap: wrap;
 }
 .designit-img div{
     width: 50%;
     height: 50%;
-}
-.free-dropbox{
-    height: 300px;
-    background-color: blue;
-}
-footer{
-    background-color: black;
-    height: 500px;
-}
-.questions{
-    height: 400px;
-    background-color: green;
-}
-.questions div{
-    height: 50px;
-    background-color: red
-}
-footer .info{
-    display: flex;
-    background-color: yellow;
-    height: 300px;
-    margin-top: 30px;
-}
-.info div{
-    width: calc(100% / 5);
-}
-.container .italy{
-    height: 20px;
-    background-color: white;
 }
