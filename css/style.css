@@ -67,7 +67,7 @@ nav div > button{
     padding-right: 10px;
 }
 .navigation-left > div:not(.logo):hover,
-.navigation-right > div:hover{
+.navigation-right > div:not(.login):hover{
     border-bottom: 2px solid black;
     cursor: pointer;
 }
@@ -139,11 +139,11 @@ header{
     max-width: 280px;
 }
 .box{
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 .box > h3{
     text-align: center;
-    border: 1px solid black;
+    border-bottom: 1px solid gray;
     padding: 5px 0;
     font-size: 0.8em;
 }
@@ -177,6 +177,7 @@ header{
 hr{
     margin: 40px 0;
     width: 40px;
+    background-color: lightgray;
 }
 .column-bottom{
     margin-top: 40px;
@@ -245,13 +246,14 @@ hr{
 .designit-center{
     padding: 30px;
     overflow: auto;
-    background-color: lightgrey;
+    background-color: #f5f5f5;
 }
 .designit-center img{
     width: 60%;
 }
 .designit-center > hr{
     width: 100px;
+    color: lightgray;
 }
 .designit-center > p{
     padding-bottom: 40px;
@@ -265,33 +267,34 @@ hr{
     filter: invert(1);
 }
 .square-1{
-    background-color: green;
+    background-color: #a2d39b;
+    border: 10px solid #d1e9cd;
 }
 .square-2{
-    background-color: brown;
+    background-color: #61082b;
 }
 .square-3{
-    background-color: aqua;
+    background-color: #0093ce;
 }
 .square-4{
-    background-color: red;
+    background-color: #ff1c1c;
 }
 .square-5{
-    background-color: red;
+    background-color: #d5001f;
 }
 .square-6{
-    background-color: red;
+    background-color: #b4d0e7;
 }
 .square-7{
-    background-color: red;
+    background-color: #0d2481;
 }
 .square-8{
-    background-color: red;
+    background-color: #ffd830;
 }
 
 /* prova gratuita*/
 .free-dropbox{
-    background-color: blue;
+    background-color: #b4d0e7;
 }
 .container-main{
     padding: 80px 0;
