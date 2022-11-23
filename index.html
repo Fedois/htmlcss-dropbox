@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Dropbox</title>
 </head>
-<body class="debug">
+<body>
 
     <!-- INIZIO NAV -->
     <nav class="navigation clearfix">
@@ -49,7 +49,9 @@
             </div>
             
             <div class="login">
-                <button class="button-blue">Inizia</button>
+                <button class="button-blue">
+                    <a href="https://www.dropbox.com/plans">inizia</a>
+                </button>
             </div>
         </div>
     </nav>
@@ -67,7 +69,9 @@
                     <div class="header-paragraph">
                         <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox business è più di uno spazio di archivizazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
     
-                        <button class="button-blue">Inizia la tua prova gratuita</button>
+                        <button class="button-blue">
+                            <a href="#">Inizia la tua prova gratuita</a>
+                        </button>
     
                         <p>Annulla in qualisasi momento</p>
     
@@ -83,8 +87,8 @@
             </div>
         </header>
         
-        <!-- piano business -->
         <div class="container-main">
+        <!-- piano business -->
             <section id="business-plan">
                 <div class="business-title">
                     <h2>Trova il business che fa per te</h2>
@@ -93,6 +97,7 @@
                         <span class="circle"></span>
                         Fatturazione mensile
                     </div>
+                    
                     <div class="second-radio">
                         <span class="circle"></span>
                         Fatturazione annuale
@@ -100,7 +105,7 @@
                 </div>
 
                 <div class="column-business">
-                    <section class="column-top flex">
+                    <div class="column-top flex">
                         <!-- prima colonna -->
                         <div class="box">
                             <h3><i class="fa-solid fa-user"></i> Singolo</h3>
@@ -113,11 +118,11 @@
                                 </div>
 
                                 <div class="part-center">
-                                        <p><i class="fa-solid fa-user"></i> 1 utente</p>
+                                    <p><i class="fa-solid fa-user"></i> 1 utente</p>
                                     
                                     <div class="flex">
                                         <i class="fa-solid fa-folder"></i>
-                                        <p> 5 tb di spazio di archivazione sicuro</p>
+                                        <p> 5 tb di spazio di archivazione <br> sicuro</p>
                                     </div>
 
                                     <div class="flex">
@@ -126,7 +131,9 @@
                                     </div>
 
                                     <div class="part-button">
-                                        <button class="button-blue">Prova gratis per 30 giorni</button>
+                                        <button class="button-blue">
+                                            <a href="">Prova gratis per 30 giorni</a>
+                                        </button>
                                     </div>
     
                                     <span>
@@ -164,7 +171,7 @@
                                 </div>
 
                                 <div class="part-center">
-                                        <p><i class="fa-solid fa-user"></i> 3 o più utenti</p>
+                                    <p><i class="fa-solid fa-user"></i> 3 o più utenti</p>
                                     
                                     <div class="flex">
                                         <i class="fa-solid fa-folder"></i>
@@ -177,7 +184,9 @@
                                     </div>
 
                                     <div class="part-button">
-                                        <button class="button-blue">Prova gratis per 30 giorni</button>
+                                        <button class="button-blue">
+                                            <a href="">Prova gratis per 30 giorni</a>
+                                        </button>
                                     </div>
 
                                     <span>
@@ -230,7 +239,7 @@
                                 </div>
 
                                 <div class="part-center">
-                                        <p><i class="fa-solid fa-user"></i> 10 o più utenti</p>
+                                    <p><i class="fa-solid fa-user"></i> 10 o più utenti</p>
                                     
                                     <div class="flex">
                                         <i class="fa-solid fa-folder"></i>
@@ -243,7 +252,9 @@
                                     </div>
 
                                     <div class="part-button">
-                                        <button class="button-blue">Contattaci</button>
+                                        <button class="button-blue">
+                                            <a href="">contattaci</a>
+                                        </button>
                                     </div>
     
                                     <span>
@@ -273,25 +284,30 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
 
                     <!-- quarta colonna grande -->
-                    <section class="column-bottom">
+                    <div class="column-bottom">
                         <div class="box">
                             <h3><i class="fa-solid fa-building"></i> Team</h3>
 
                             <div class="container-small">
-                                <div class="clearfix">
+                                <div class="flex">
                                     <h4>Enterprise</h4>
-                                    <div class="part-button">
-                                        <Button class="button-blue">Contatta l'ufficio vendite</Button>
+                                    
+                                    <div class="part-button-right">
+                                        <button class="button-blue">
+                                            <a href="">Contatta ufficio vendite</a>
+                                        </button>
                                     </div>
                                 </div>
+                                
                                 <h5>Contatta l'ufficio vendite per i prezzi</h5>
+                                
                                 <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su <br>qualsiasi scala.</p>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </section>
 
@@ -299,7 +315,6 @@
             <section class="partner-dropbox flex">
                 <div class="partner-img">
                     <img src="img/partner.png" alt="">
-
                 </div>
 
                 <div class="info-partner">
@@ -307,7 +322,9 @@
                     
                     <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi azinedali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
                     
-                    <button class="button-white">Trova un partner</button>
+                    <button class="button-border-black">
+                        <a href="#">Trova un partner</a>
+                    </button>
                 </div>
             </section>
 
@@ -345,8 +362,7 @@
                     <div>
                         <img src="img/business-feature-integrations-it.png" alt="">
 
-
-                        <h3>Passa di meno da uno strumento all'altro</h3>
+                    <h3>Passa di meno da uno strumento all'altro</h3>
 
                         <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                     </div>
@@ -379,7 +395,7 @@
         <!-- designit -->
         <section class="designit flex">
             <!-- contenuto sx -->
-           <div class="designit-img flex">
+            <div class="designit-img flex">
                 <div class="square-1 flex">
                     <img src="img/designit.svg" alt="designit">
                 </div>
@@ -434,9 +450,12 @@
             <section class="free-dropbox">
                 <div class="container-main flex">
                     <h2>Porta Dropbox Business <br> nella tua azienda</h2>
-                    <span>
-                        <button class="button-white">Inizia la tua prova grauita</button>
-                    </span>
+                    
+                    <div>
+                        <button class="button-white">
+                            <a href="#">Inizia la tua prova grauita</a>
+                        </button>
+                    </div>
                 </div>
             </section>
 

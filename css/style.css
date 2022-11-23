@@ -24,13 +24,21 @@ body{
 button{
     border-style: none;
 }
+button a{
+    text-decoration: none;
+}
 button:hover{
     cursor: pointer;
     opacity: 0.7;
 }
 .button-blue{
     background-color: #0061ff;
+}
+.button-blue a{
     color: white;
+}
+hr{
+    margin: 40px 0;
 }
 
 /* NAVIGATION */
@@ -40,6 +48,7 @@ nav{
     top: 0;
     left: 0;
     width: 100vw;
+    z-index: 30;
 }
 nav div > div{
     padding: 15px 0;
@@ -47,7 +56,7 @@ nav div > div{
 nav div > button{
     margin: 0 10px;
     padding: 5px 10px;
-    background-color: white;
+    background-color: transparent;
 }
 .navigation-left{
     float: left;
@@ -57,8 +66,8 @@ nav div > button{
     width: 100px;
     vertical-align: middle;
 }
-.navigation-left > div, 
-.navigation-right > div{
+.navigation-left > *, 
+.navigation-right > *{
     display: inline-block; 
 }
 .navigation-right{
@@ -68,41 +77,10 @@ nav div > button{
 }
 .navigation-left > div:not(.logo):hover,
 .navigation-right > div:not(.login):hover{
-    border-bottom: 2px solid black;
-    cursor: pointer;
+    box-shadow: inset 0px -2px 0px 0px #000000;
 }
 
 /* MAIN*/
-/* header */
-header{
-    padding-top: 100px;
-    background-color: #b4d0e7
-}
-.header-title > h1{
-    padding-bottom: 30px;
-    font-size: 4em;
-}
-.header-paragraph{
-    width: 30vw;
-}
-.header-paragraph > button{
-    margin: 30px 0;
-    border: none;
-    padding: 10px 10px;
-    font-size: 15px;
-}
-.header-paragraph i {
-   font-size: 3em;
-   margin-top: 70px;
-   color: black;
-}
-.header-img{
-    width: 80vw;
-    height: 200px;
-}
-.header-img > img{
-    width: 100%;
-}
 .container-main{
     width: 60vw;
     margin: auto;
@@ -110,6 +88,39 @@ header{
 .container-main > section{
     margin-bottom: 140px;
     margin-top: 50px;
+}
+/* header */
+header{
+    padding-top: 80px;
+    background-color: #b4d0e7;
+}
+header > .container-big{
+    position: relative;
+    top: 80px;
+}
+.header-title > h1{
+    padding-bottom: 30px;
+    font-size: 4em;
+}
+.header-paragraph{
+    width: 30%;
+    position: relative;
+}
+.header-paragraph > .button-blue{
+    margin: 30px 0;
+    padding: 10px 10px;
+}
+.header-paragraph i {
+   font-size: 3em;
+   position: absolute;
+   bottom: 100px;
+   color: black;
+}
+.header-img{
+    width: 70%;
+}
+.header-img > img{
+    width: 100%;
 }
 
 /* piano business*/
@@ -129,19 +140,19 @@ header{
     display: inline-block;
     vertical-align: middle;
 }
-.first-radio > span{
+.first-radio > .circle{
     border: 4px solid blue;
 }
 .column-business > .column-top{
     justify-content: space-between;
 }
 .column-top > div{
-    max-width: 280px;
+    max-width: 30%;
 }
 .box{
     border: 2px solid lightgray;
 }
-.box > h3{
+.box h3{
     text-align: center;
     border-bottom: 2px solid lightgray;
     padding: 5px 0;
@@ -165,7 +176,7 @@ header{
     margin-bottom: 10px;
 }
 .part-top span{
-    font-size: 13px;
+    font-size: 0.8em;
     color: gray;
 }
 .part-center{
@@ -178,7 +189,7 @@ header{
 .part-button{
     text-align: center;
 }
-.part-button > button{
+.part-button > .button-blue{
     padding: 10px 30px;
     margin: 30px 0;
     width: 100%;
@@ -187,7 +198,6 @@ header{
     font-size: 0.8em;
 }
 hr{
-    margin: 40px 0;
     width: 40px;
     background-color: lightgray;
 }
@@ -197,35 +207,38 @@ hr{
 .column-bottom{
     margin-top: 40px;
 }
+.container-small > .flex{
+    justify-content: space-between;
+}
 .column-bottom p{
     margin-top: 50px;
 }
-.column-bottom .container-small div > *{
-    display: inline-block;
-}
-.column-bottom .container-small div > .part-button{
-    float: right;
+.part-button-right > .button-blue{
+    padding: 10px 30px;
 }
 
 /* partner-dropbox */
 .partner-img{
-    width: 60vw;
+    width: 60%;
 }
 .partner-img > img{
     width: 100%;
 }
 .info-partner{
-    width: 40vw;
+    width: 40%;
     padding: 40px;
 }
 .info-partner > h2{
     margin-bottom: 15px;
 }
-.info-partner > button{
+.info-partner > .button-border-black{
     margin-top: 30px;
     padding: 10px 15px;
     background-color: transparent;
     border: 1px solid black;
+}
+.info-partner > .button-border-black > a{
+    color: black;
 }
 
 /* piano business 2 */
@@ -329,8 +342,11 @@ hr{
 .free-dropbox h2{
     font-size: 1.9em;
 }
-.free-dropbox button{
+.free-dropbox .button-white{
     padding: 10px 40px;
+}
+.free-dropbox .button-white > a{
+    color: black;
 }
 
 /* domande frequenti*/
@@ -348,15 +364,15 @@ hr{
 .container-main > .question:last-child{
     border-bottom: 1px solid gray;
 }
-.question span{
-    margin-right: 30px;
-}
 .question p{
     margin-top: 40px;
     display: none;
 }
 .question:hover p{
     display: block;
+}
+.question .arrow{
+    margin-right: 30px;
 }
 .arrow i:first-child{
     display: none;
@@ -372,6 +388,7 @@ hr{
 /* lista informazioni */
 footer{
     background-color: black;
+    margin-top: 30px;
 }
 .info{
     color: white;
@@ -389,9 +406,9 @@ footer{
     margin: 10px 0;
 }
 .info-list li > a{
-    text-decoration: none;
     color: white;
     font-size: 0.8em;
+    text-decoration: none;
 }
 footer hr{
     width: 100px;
